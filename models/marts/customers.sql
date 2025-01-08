@@ -26,6 +26,7 @@ customer_orders_summary as (
         sum(orders.order_total) as lifetime_spend
 
     from orders
+    where 1=1 
 
     group by 1
 
